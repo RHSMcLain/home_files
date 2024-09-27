@@ -160,6 +160,7 @@ nav ul li:hover ul {
   padding: 8px;
   width: 80%;
   border: 4px outset lightgray;
+  scrollbar-width: none;
 }
 #slideshow img {
   width: 200px;
