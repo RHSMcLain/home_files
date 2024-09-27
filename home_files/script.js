@@ -1,11 +1,12 @@
 var slideContainer;
 var slideCounter = 0;
 var myTimer;
+var imgSize = 400;
 window.onload = function(){
     slideContainer = document.querySelector("#slideshow");
 }
 function slides(){
-   
+    clearInterval(myTimer);
     if (slideContainer.scrollLeft + slideContainer.clientWidth >= slideContainer.scrollWidth){
         clearInterval(myTimer)
         myTimer = setInterval(slideHome, 0.1);
@@ -18,7 +19,7 @@ function slides(){
  
 }
 function slideFrame(){
-    slideContainer.scrollBy(5, 0);
+    slideContainer.scrollBy(imgSize/30, 0);
     slideCounter++;
     // console.log(slideCounter);
     if (slideCounter > 30){
