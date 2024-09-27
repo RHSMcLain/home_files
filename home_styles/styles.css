@@ -52,7 +52,7 @@ header + div {
   border: 2px solid black;
   width: 200px;
 }
-#content {
+main {
   margin-left: 210px;
 }
 #leftBar a {
@@ -169,4 +169,20 @@ nav ul li:hover ul {
 }
 #distanceLearning article *{
     text-align: left;
+}
+#slideshow{
+  /* border: 3px inset silver; */
+  min-height: 200px;
+  margin: 5px 2px;
+  box-shadow: 2px 2px 5px grey;
+  display: flex;
+
+}
+#slideshow img{
+  width: 200px;
+  display: inline-block;
+  flex-flow: row nowrap;
+  margin: 5px;
+
+
 }
