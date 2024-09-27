@@ -1,0 +1,164 @@
+
+@lightColor: #CAE4DB;
+@darkColor: #00303f;
+@accentColor: #7A9D96;
+@brightColor: #DCAE1D;
+@borderColor: #262228;
+@whiteColor: white;
+@headingFont: "raleway", sans-serif;
+h3{
+ font-family: @headingFont;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+body{
+    background-color: @lightColor;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    font-size: 2em;
+    background-color: @darkColor;
+    color: @brightColor;
+    font-family: @headingFont;
+    text-align: center;
+    padding: 0px 0px;
+  
+}
+#contentHeader{
+    color: @brightColor;
+    border: 2px solid @borderColor;
+    background-image:url("../home_images/IMG_7940.JPG");
+    background-attachment: fixed;
+    background-size: cover;
+   
+    padding: 10px 10px 20px 10px;
+}
+#contentHeader h1{
+    margin: 0px 5px 10px 5px;
+    color: @darkColor;
+    background-color: @brightColor;
+    font-family: @headingFont;
+}
+#contentHeader table{
+    opacity: 0.9;
+}
+header + div{
+    background-color: @darkColor;
+    color: @lightColor;
+    font-family: aileron, sans-serif;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    z-index: 10;
+}
+#leftBar{
+    float:left;
+    margin-top: 10px;
+    min-height: 400px;
+    background-color: @accentColor;
+    border: 2px solid black;
+    width: 200px;
+    
+}
+#content{
+    margin-left: 210px;
+        
+}
+#leftBar a{
+    display: block;
+    background-color: @lightColor;
+    margin-bottom: 5px;
+    color: @darkColor;
+    text-decoration :none;
+    padding: 2px;
+    margin-right: 2px;margin-left: 2px;
+    border-radius: 4px;
+    border: 1px solid @borderColor;
+}
+
+#leftBar a:hover{
+    background-color: @darkColor;
+    color: @whiteColor;
+}
+#leftBar h3{
+    color: @lightColor;
+    text-align: center;
+    font-family: @headingFont;
+    
+}
+table, th, td{
+    border: 1px solid @borderColor;
+    border-collapse: collapse;
+    padding: 2px;
+}
+table{
+    width: 50%;
+    margin-left: 10px;
+}
+tr{
+    background-color: @lightColor;
+    color: @borderColor;
+}
+tr:nth-child(even){
+    background-color: @whiteColor;
+}
+article{
+    margin: 5px;
+    background-color: @whiteColor;
+    padding: 5px;
+}
+p{
+    font-family: times, serif;
+}
+p:first-letter{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: @headingFont;
+}
+nav{
+    background-color: @darkColor;
+    color: @whiteColor;
+    margin: 0px;
+    position: sticky;
+    top: 15px;
+    z-index: 5;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+nav>ul>li{
+    display: inline-block;
+}
+nav a{
+   text-decoration: none;
+    color: @whiteColor;
+}
+nav a:hover{
+    color: @brightColor;
+}
+nav ul li{
+    position: relative;
+    padding: 2px 5px;
+}
+nav ul ul{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background-color: @darkColor;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li:hover ul{
+    opacity: 1;
+    pointer-events: all;
+    
+}
+.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
