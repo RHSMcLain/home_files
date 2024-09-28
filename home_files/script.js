@@ -36,11 +36,11 @@ function slideHome(){
     }
 }
 function slideLeft(){
-    slideContainer.scrollBy(-20,0);
+    slideContainer.scrollBy(-15,0);
 
 }
 function slideRight(){
-    slideContainer.scrollBy(20,0);
+    slideContainer.scrollBy(15,0);
 }
 function goLeft(){
     clearInterval(myTimer);

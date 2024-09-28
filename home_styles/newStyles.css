@@ -153,11 +153,10 @@ nav ul li:hover ul {
   /* border: 3px inset silver; */
   min-height: 200px;
   margin: 5px auto;
-  width: 95%;
-  border: 4px outset lightgray;
   scrollbar-width: none;
   position: relative;
-  background-color: black;
+  padding: 2px 25px;
+  background-color: transparent;
   overflow: hidden;
 }
 #slideshowContainer .cover2 {
@@ -174,31 +173,45 @@ nav ul li:hover ul {
   display: flex;
   margin: 0px auto;
   overflow-x: scroll;
-  padding: 8px 20px;
+  padding: 8px 120px;
+  color: black;
   scrollbar-width: none;
+  align-items: baseline;
 }
-#slideshow img {
-  width: 400px;
+#slideshow img,
+#slideshow iframe {
+  height: 225px;
   display: inline-block;
   flex-flow: row nowrap;
   margin: 5px;
 }
 #slideshow div {
   text-align: center;
-  box-shadow: 2px 2px 2px grey;
+  position: relative;
+}
+#slideshow caption {
+  position: absolute;
+  bottom: 5px;
 }
 #goRight {
-  right: -5px;
+  right: 0px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9));
 }
 #goLeft {
-  left: -5px;
+  left: 0px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.9));
 }
 .goButton {
-  width: 20px;
-  background-color: grey;
-  box-shadow: 2px 2px 3px lightgray;
+  width: 120px;
   position: absolute;
-  top: 45%;
+  top: 0px;
   text-wrap: wrap;
   text-align: center;
+  height: 100%;
+  line-height: 100%;
+  vertical-align: middle;
+  z-index: 5;
+}
+.goButton:hover {
+  background: rgba(234, 233, 214, 0.5) !important;
 }
