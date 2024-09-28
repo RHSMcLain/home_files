@@ -171,11 +171,11 @@ nav ul li:hover ul{
     scrollbar-width: none;
     position:relative;
     
+    background-color: black; 
+    overflow: hidden;
   
   }
-  #slideshowContainer{
-    position: relative;
-  }
+
 
   #slideshowContainer .cover2{
     position: absolute;
@@ -191,9 +191,10 @@ nav ul li:hover ul{
     
     box-shadow: 2px 2px 5px grey;
     display: flex;
-    overflow: hidden;
+    margin: 0px auto;
     overflow-x: scroll;
     padding: 8px 20px;
+    scrollbar-width: none;
   }
   #slideshow img{
     width: 400px;
@@ -205,8 +206,19 @@ nav ul li:hover ul{
     text-align: center;
     box-shadow: 2px 2px 2px grey;
   }
+  #goRight{
+    right: -5px;
+  }
+  #goLeft{
+    left: -5px;
+  }
   .goButton{
-    width: 100px;
+    width: 20px;
     background-color: grey;
     box-shadow: 2px 2px 3px lightgray;
+    position: absolute;
+    top: 45%;
+    text-wrap:wrap;    
+    text-align: center;
+    
   }
