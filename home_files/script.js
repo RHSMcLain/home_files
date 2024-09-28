@@ -19,10 +19,10 @@ function slides(){
  
 }
 function slideFrame(){
-    slideContainer.scrollBy(imgSize/30, 0);
+    slideContainer.scrollBy(imgSize/20, 0);
     slideCounter++;
     // console.log(slideCounter);
-    if (slideCounter > 30){
+    if (slideCounter > 20){
         clearInterval(myTimer);
         slideCounter = 0;
     }
@@ -30,8 +30,29 @@ function slideFrame(){
     
 }
 function slideHome(){
-    slideContainer.scrollBy(-10, 0);
+    slideContainer.scrollBy(-100, 0);
     if (slideContainer.scrollLeft <= 0){
         clearInterval(myTimer);
     }
+}
+function slideLeft(){
+    slideContainer.scrollBy(-20,0);
+
+}
+function slideRight(){
+    slideContainer.scrollBy(20,0);
+}
+function goLeft(){
+    clearInterval(myTimer);
+    console.log("going left");
+    myTimer = setInterval(slideLeft, 0.3);
+
+}
+function goRight(){
+    clearInterval(myTimer);
+    console.log("going right");
+    myTimer = setInterval(slideRight, 0.3);
+}
+function stop(){
+    clearInterval(myTimer);
 }

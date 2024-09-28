@@ -162,30 +162,38 @@ nav ul li:hover ul{
     flex-flow: row wrap;
     
 }
-#slideshow{
+#slideshowContainer{
     /* border: 3px inset silver; */
     min-height: 200px;
     margin: 5px auto;
+    width: 95%;
+    border: 4px outset lightgray;
+    scrollbar-width: none;
+    position:relative;
+    
+  
+  }
+  #slideshowContainer{
+    position: relative;
+  }
+
+  #slideshowContainer .cover2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,  rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 7%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3) 93%, rgba(255, 255, 255, 0.6) 100%);
+    pointer-events: none;
+  }
+
+  #slideshow{
+    
     box-shadow: 2px 2px 5px grey;
     display: flex;
     overflow: hidden;
     overflow-x: scroll;
     padding: 8px 20px;
-    width: 90%;
-    border: 4px outset lightgray;
-    scrollbar-width: none;
-    position:relative;
-  
-  }
-  #slideshow::after{
-    content: "";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    color: rgba(0,0,0,0.7);
-    pointer-events: none;
   }
   #slideshow img{
     width: 400px;
@@ -196,4 +204,9 @@ nav ul li:hover ul{
   #slideshow div{
     text-align: center;
     box-shadow: 2px 2px 2px grey;
+  }
+  .goButton{
+    width: 100px;
+    background-color: grey;
+    box-shadow: 2px 2px 3px lightgray;
   }
