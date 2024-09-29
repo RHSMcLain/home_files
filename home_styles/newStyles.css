@@ -4,20 +4,20 @@ h3 {
   font-weight: bold;
 }
 body {
-  background-color: #CAE4DB;
+  background-color: #cce5f5;
   margin: 0px;
   padding: 0px;
 }
 header {
   font-size: 2em;
-  background-color: #00303f;
-  color: #DCAE1D;
+  background-color: navy;
+  color: #dcd91d;
   font-family: "raleway", sans-serif;
   text-align: center;
   padding: 0px 0px;
 }
 #contentHeader {
-  color: #DCAE1D;
+  color: #dcd91d;
   border: 2px solid #262228;
   background-image: url("../home_images/IMG_7940.JPG");
   background-attachment: fixed;
@@ -26,16 +26,16 @@ header {
 }
 #contentHeader h1 {
   margin: 0px 5px 10px 5px;
-  color: #00303f;
-  background-color: #DCAE1D;
+  color: navy;
+  background-color: #dcd91d;
   font-family: "raleway", sans-serif;
 }
 #contentHeader table {
   opacity: 0.9;
 }
 header + div {
-  background-color: #00303f;
-  color: #CAE4DB;
+  background-color: navy;
+  color: #cce5f5;
   font-family: aileron, sans-serif;
   text-align: center;
   position: sticky;
@@ -47,7 +47,7 @@ header + div {
   float: left;
   margin-top: 10px;
   min-height: 400px;
-  background-color: #7A9D96;
+  background-color: #82c6e3;
   border: 2px solid black;
   width: 200px;
 }
@@ -56,9 +56,9 @@ header + div {
 }
 #leftBar a {
   display: block;
-  background-color: #CAE4DB;
+  background-color: #cce5f5;
   margin-bottom: 5px;
-  color: #00303f;
+  color: navy;
   text-decoration: none;
   padding: 2px;
   margin-right: 2px;
@@ -67,11 +67,11 @@ header + div {
   border: 1px solid #262228;
 }
 #leftBar a:hover {
-  background-color: #00303f;
+  background-color: navy;
   color: white;
 }
 #leftBar h3 {
-  color: #CAE4DB;
+  color: #cce5f5;
   text-align: center;
   font-family: "raleway", sans-serif;
 }
@@ -87,7 +87,7 @@ table {
   margin-left: 10px;
 }
 tr {
-  background-color: #CAE4DB;
+  background-color: #cce5f5;
   color: #262228;
 }
 tr:nth-child(even) {
@@ -107,7 +107,7 @@ p:first-letter {
   font-family: "raleway", sans-serif;
 }
 nav {
-  background-color: #00303f;
+  background-color: navy;
   color: white;
   margin: 0px;
   position: sticky;
@@ -127,7 +127,7 @@ nav a {
   color: white;
 }
 nav a:hover {
-  color: #DCAE1D;
+  color: #dcd91d;
 }
 nav ul li {
   position: relative;
@@ -137,7 +137,7 @@ nav ul ul {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  background-color: #00303f;
+  background-color: navy;
   margin: 0px;
   padding: 0px;
 }
