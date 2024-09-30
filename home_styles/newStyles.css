@@ -15,6 +15,7 @@ header {
   font-family: "raleway", sans-serif;
   text-align: center;
   padding: 0px 0px;
+  position: relative;
 }
 #contentHeader {
   color: #dcd91d;
@@ -42,6 +43,13 @@ header + div {
   top: 0px;
   margin: 0px;
   z-index: 10;
+}
+header > img {
+  width: 120px;
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  z-index: 100;
 }
 #leftBar {
   float: left;
