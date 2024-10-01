@@ -2,6 +2,7 @@ var slideContainer;
 var slideCounter = 0;
 var myTimer;
 var imgSize = 400;
+var sliderSpeed = 50;
 window.onload = function(){
     slideContainer = document.querySelector("#slideshow");
 }
@@ -36,11 +37,11 @@ function slideHome(){
     }
 }
 function slideLeft(){
-    slideContainer.scrollBy(-15,0);
+    slideContainer.scrollBy(sliderSpeed/100 * -3,0);
 
 }
 function slideRight(){
-    slideContainer.scrollBy(15,0);
+    slideContainer.scrollBy(sliderSpeed/100 * 3,0);
 }
 function goLeft(){
     clearInterval(myTimer);

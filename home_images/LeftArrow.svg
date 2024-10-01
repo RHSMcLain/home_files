@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="94.4606" height="411.8985" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94.4606 411.8985">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#White_Black);
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <linearGradient id="White_Black" data-name="White, Black" x1=".5312" y1="205.9493" x2="93.5312" y2="205.9493" gradientTransform="translate(94.0625) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#231f20"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-1" points=".5312 205.9493 70.5312 400.9493 93.5312 410.9493 9.5312 205.9493 93.5312 .9493 70.5312 10.9493 .5312 205.9493"/>
+</svg>

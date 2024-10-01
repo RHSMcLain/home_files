@@ -223,3 +223,11 @@ nav ul li:hover ul {
 .goButton:hover {
   background: rgba(234, 233, 214, 0.5) !important;
 }
+.goButton:hover img {
+  opacity: 0.8;
+  pointer-events: none;
+}
+.goButton img {
+  height: 100%;
+  opacity: 0.3;
+}
