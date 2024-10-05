@@ -6,16 +6,19 @@
 @whiteColor: white;
 @headingFont: "raleway", sans-serif;
 
+body{
+    background-color: @lightColor;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
 h3{
     font-family: @headingFont;
     font-size: 1.2em;
     font-weight: bold;
 }
-body{
-    background-color: @lightColor;
-    margin: 0px;
-    padding: 0px;
-}
+
 header{
     font-size: 2em;
     background-color: @darkColor;
@@ -49,7 +52,6 @@ header + div{
     color: @lightColor;
     font-family: aileron, sans-serif;
     text-align: center;
-    position: sticky;
     top: 0px;
     margin: 0px;
     z-index: 10;
@@ -120,18 +122,15 @@ article{
 p{
     font-family: times, serif;
 }
-p:first-letter{
-    font-size: 2em;
-    font-weight: bold;
-    font-family: @headingFont;
-}
+
 nav{
     background-color: @darkColor;
     color: @whiteColor;
     margin: 0px;
     position: sticky;
-    top: 15px;
+    top: 0px;
     z-index: 5;
+    height: 23px;
 }
 nav ul{
     list-style: none;
@@ -237,7 +236,7 @@ nav ul li:hover ul{
     height: 100%;
     line-height: 100%;
     vertical-align: middle;
-    z-index: 5;
+    z-index: 4;
     
   }
   .goButton:hover{
@@ -251,3 +250,81 @@ nav ul li:hover ul{
     height: 100%;
     opacity: 0.3;
   }
+  section{
+    clear:both;
+    & > div{        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-around;
+
+    }
+    & h1{
+        background-color: @darkColor;
+        color: @brightColor;
+        text-align: center;
+        font-family: @headingFont;
+        padding: 5px;
+        position: sticky;
+        top: 23px;
+    }
+    & img{
+        width: 300px;
+        box-shadow: 4px 4px 6px rgb(92, 100, 133);
+        display: block;
+        margin: 5px auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        
+    }
+    & article{
+        border-radius: 15px; 
+        flex: 1;
+        min-width: 375px;
+        max-width: 450px;
+        padding: 5px;
+        & p{
+           
+            text-indent: 20px; 
+        }
+        & div{
+            padding-right: 10px;
+            max-height: 500px;
+            overflow-y: scroll;
+            scrollbar-width:thin;
+            
+        }
+    }
+
+  }
+  #special article{
+    flex: 1;
+    max-width: none;
+    & img{
+        width: 80%;
+    }
+  }
+  footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: @darkColor;
+    color: white;
+    height: 25px;
+    & a{
+        color: white;
+    }
+    & span:first-child{
+        position: absolute;
+        left: 10px;
+        bottom: 5px;
+    }
+    & span:last-child{
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+    }
+  }
+ 

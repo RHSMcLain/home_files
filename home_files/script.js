@@ -37,11 +37,11 @@ function slideHome(){
     }
 }
 function slideLeft(){
-    slideContainer.scrollBy(sliderSpeed/100 * -3,0);
+    slideContainer.scrollBy(sliderSpeed/100 * -5,0);
 
 }
 function slideRight(){
-    slideContainer.scrollBy(sliderSpeed/100 * 3,0);
+    slideContainer.scrollBy(sliderSpeed/100 * 5,0);
 }
 function goLeft(){
     clearInterval(myTimer);
