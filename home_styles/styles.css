@@ -155,13 +155,14 @@ nav ul li:hover ul {
   margin: 5px auto;
   box-shadow: 2px 2px 5px grey;
   display: flex;
-  overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
   padding: 8px 20px;
   width: 90%;
   border: 4px outset lightgray;
-  scrollbar-width: none;
+  scrollbar-width: normal;
   position: relative;
+  scroll-snap-type: x mandatory;
 }
 #slideshow::after {
   content: "";
@@ -178,10 +179,13 @@ nav ul li:hover ul {
   display: inline-block;
   flex-flow: row nowrap;
   margin: 5px;
+  scroll-snap-align: start;
 }
 #slideshow div {
   text-align: center;
   box-shadow: 2px 2px 2px grey;
+  margin: 5px;
+  scroll-snap-align: center;
 }
 section img {
   width: 400px;
