@@ -299,3 +299,6 @@ footer span:last-child {
   right: 10px;
   bottom: 5px;
 }
+h4 {
+  text-align: center;
+}

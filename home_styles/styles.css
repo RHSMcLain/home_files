@@ -10,7 +10,7 @@ body {
 }
 header {
   font-size: 2em;
-  background-color: #navy;
+  background-color: navy;
   color: #DCAE1D;
   font-family: "raleway", sans-serif;
   text-align: center;
@@ -26,7 +26,7 @@ header {
 }
 #contentHeader h1 {
   margin: 0px 5px 10px 5px;
-  color: #navy;
+  color: navy;
   background-color: #DCAE1D;
   font-family: "raleway", sans-serif;
 }
@@ -34,7 +34,7 @@ header {
   opacity: 0.9;
 }
 header + div {
-  background-color: #navy;
+  background-color: navy;
   color: #CAE4DB;
   font-family: aileron, sans-serif;
   text-align: center;
@@ -58,7 +58,7 @@ header + div {
   display: block;
   background-color: #CAE4DB;
   margin-bottom: 5px;
-  color: #navy;
+  color: navy;
   text-decoration: none;
   padding: 2px;
   margin-right: 2px;
@@ -67,7 +67,7 @@ header + div {
   border: 1px solid #262228;
 }
 #leftBar a:hover {
-  background-color: #navy;
+  background-color: navy;
   color: white;
 }
 #leftBar h3 {
@@ -107,7 +107,7 @@ p:first-letter {
   font-family: "raleway", sans-serif;
 }
 nav {
-  background-color: #navy;
+  background-color: navy;
   color: white;
   margin: 0px;
   position: sticky;
@@ -137,7 +137,7 @@ nav ul ul {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  background-color: #navy;
+  background-color: navy;
   margin: 0px;
   padding: 0px;
 }
@@ -189,4 +189,7 @@ nav ul li:hover ul {
 }
 section img {
   width: 400px;
+}
+h4 {
+  text-align: center;
 }
